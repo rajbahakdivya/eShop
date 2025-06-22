@@ -1,3 +1,5 @@
+using eShop.Services;
+
 namespace eShop
 {
     public class Program
@@ -8,6 +10,8 @@ namespace eShop
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddTransient<ICatalogService, CatalogService>();
 
             var app = builder.Build();
 

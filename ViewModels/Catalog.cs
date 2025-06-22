@@ -10,3 +10,4 @@ namespace eShop.ViewModels
         public List<CatalogItem> Data { get; set; }
     }
 }
+    
